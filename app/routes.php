@@ -2,7 +2,10 @@
 
 self::get('/', 'IndexController@index');
 
-self::get('/php', 'PhpController@install');
+self::get('/php', 'PhpController@index');
+self::get('/php/all', 'PhpController@index');
+self::get('/php/add', 'PhpController@add');
+self::post('/php/add', 'PhpController@add');
 self::get('/php/pear', 'PhpController@pear');
 
 self::get('/apache', 'ApacheController@install');

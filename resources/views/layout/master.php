@@ -61,7 +61,10 @@
 <div class="container-fluid content">
     <div class="row">
         <div class="main-content">
-        @yield('index')
+            <?php if (session()->has('result', 'success')) {
+                echo '<div class="alert alert-success text-center">Запись сохранена</div>';
+            }?>
+            @yield('index')
         </div>
     </div>
 </div>
@@ -76,5 +79,6 @@
 <script src="/public/js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/public/js/bootstrap.min.js"></script>
+@yield('page.scripts')
 </body>
 </html>

@@ -16,7 +16,8 @@
   ],
   "require": {
     "php": "^7.1.3",
-    "semenovdv80/framework": "dev-master"
+    "semenovdv80/framework": "1.0.1",
+    "vlucas/phpdotenv": "^2.5"
   },
   "require-dev": {
     "fzaninotto/faker": "^1.4",

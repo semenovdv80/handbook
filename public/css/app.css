@@ -65,3 +65,20 @@ ul.main-menu li:not(.nav-header) {
     -o-transition: .3s;
     transition: .3s;
 }
+
+.article {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 2px;
+}
+
+.article-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.article-content {
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+    padding: 5px;
+}
