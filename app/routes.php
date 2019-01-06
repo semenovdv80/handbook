@@ -2,10 +2,17 @@
 
 self::get('/', 'IndexController@index');
 
+self::get('/article/add', 'ArticleController@add');
+self::post('/article/add', 'ArticleController@add');
+
+self::get('/article/edit/{id}', 'ArticleController@edit');
+self::post('/article/edit/{id}', 'ArticleController@edit');
+self::post('/article/delete/{id}', 'ArticleController@delete');
+
 self::get('/php', 'PhpController@index');
 self::get('/php/all', 'PhpController@index');
-self::get('/php/add', 'PhpController@add');
 self::post('/php/add', 'PhpController@add');
+
 self::get('/php/pear', 'PhpController@pear');
 
 self::get('/apache', 'ApacheController@install');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7fb05451f280c9fe5952da03cdaee57",
+    "content-hash": "05347840b953d805866d3fab8fea6f4f",
     "packages": [
         {
             "name": "nesbot/carbon",
@@ -61,16 +61,16 @@
         },
         {
             "name": "semenovdv80/framework",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/semenovdv80/framework.git",
-                "reference": "47fc628291359aa34fefa7bf079f810c66daf8d1"
+                "reference": "f1bac2060fa826807c8f1338396fbe6e9e3bc763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/semenovdv80/framework/zipball/47fc628291359aa34fefa7bf079f810c66daf8d1",
-                "reference": "47fc628291359aa34fefa7bf079f810c66daf8d1",
+                "url": "https://api.github.com/repos/semenovdv80/framework/zipball/f1bac2060fa826807c8f1338396fbe6e9e3bc763",
+                "reference": "f1bac2060fa826807c8f1338396fbe6e9e3bc763",
                 "shasum": ""
             },
             "require": {
@@ -113,7 +113,7 @@
                 "framework",
                 "semenovdv80"
             ],
-            "time": "2019-01-03T14:08:37+00:00"
+            "time": "2019-01-06T08:34:08+00:00"
         },
         {
             "name": "symfony/contracts",

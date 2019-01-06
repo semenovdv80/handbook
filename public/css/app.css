@@ -40,12 +40,12 @@ ul.main-menu li:hover {
 }
 
 /*смещение на 10px вправо если активен*/
-ul.main-menu li.active {
+ul.main-menu li >a.active {
     margin-left: -10px;
 }
 
 /*фон и шрифт при наведении*/
-ul.main-menu a:hover {
+ul.main-menu > li > a:hover {
     background-color: #dadada;
     color: darkblue;
 }
@@ -68,7 +68,7 @@ ul.main-menu li:not(.nav-header) {
 
 .article {
     border-radius: 5px;
-    margin: 10px;
+    margin: 15px;
     padding: 2px;
 }
 
@@ -81,4 +81,7 @@ ul.main-menu li:not(.nav-header) {
     border: 1px solid #ccc;
     background-color: #fcfcfc;
     padding: 5px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 5px;
 }

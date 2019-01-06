@@ -26,37 +26,61 @@
 <body>
 <div class="container-fluid">
 <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">ITsGOOD</a>
-                </div>
-                <ul class="nav navbar-nav">
-                 <!--
-                    <li><a href="/php/index">PHP</a></li>
-                    <li><a href="/jq">jQuery</a></li>
-                    <li><a href="/js">JavaScript</a></li>
-                    <li><a href="/html">HTML</a></li>
-                    <li><a href="/css">CSS</a></li>
-                    <li><a href="/boot">Bootstrap</a></li>
-                    <li><a href="/linux">Linux</a></li>
-                    <li><a href="/apahe">Apache</a></li>
-                    <li><a href="/git">Git</a></li>
-                    <li><a href="/design">Design Patterns</a></li>
-                    -->
-                    <li><a href="/php">PHP</a></li>
-                    <li><a href="/mysql">MySQL</a></li>
-                    <li><a href="/laravel">Laravel</a></li>
-                    <li><a href="/docker">Docker</a></li>
-                    <li><a href="/sphinx">Sphinx</a></li>
-                    <li><a href="/rabbitmq">RabbitMQ</a></li>
-                    <li><a href="/memcached">Memcached</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li></li>
-                </ul>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ITsGOOD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/php">PHP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mysql">MySQL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/laravel">Laravel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/docker">Docker</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sphinx">Sphinx</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rabbitmq">RabbitMQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/memcached">Memcached</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" name="q" value="<?= !empty(request()->q) ? request()->q : ''?>">
+                <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Найти">
+            </form>
+        </div>
+    </nav>
 </header>
 <div class="container-fluid content">
     <div class="row">
@@ -68,17 +92,18 @@
         </div>
     </div>
 </div>
-</div>
-<footer class="container-fluid">
+<footer>
     <div class="copyright">
         <div class="wrapper wrapper_copyright">
             <p>© 2017-2018. Все права защищены. Использование материалов сайта только с разрешения владельца</p>
         </div>
     </div>
 </footer>
+@include('layout.modals')
 <script src="/public/js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/public/js/bootstrap.min.js"></script>
 @yield('page.scripts')
+</div>
 </body>
 </html>

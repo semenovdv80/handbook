@@ -6,9 +6,12 @@ use App\base\BaseModel;
 
 class Article extends BaseModel
 {
-    protected $table1 = 'articles';
+    protected $table = 'articles';
 
-    const PHP = 1;
+    public static $sections = [
+        'PHP' => 1,
+        'MySQL' => 2
+    ];
 
     /**
      * Get articles list

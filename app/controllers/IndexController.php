@@ -13,7 +13,6 @@ class IndexController extends Controller
         $aData['page_description'] = 'it технологии, как сделать правильно, информация по настройке и конфигурации сервера, код php, решения на фреймворке, запросы mysql';
         view('index.index', $aData);
     }
-    
 
 
     public function cookies($var1, $var2)

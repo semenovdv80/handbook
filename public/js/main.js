@@ -3,10 +3,11 @@ $(function () {
     $('.accordion > a').click(function (e) {
         e.preventDefault();
         var $ul = $(this).siblings('ul');
-        console.log($ul);
-        var $li = $(this).parent();
-        if ($ul.is(':visible')) $li.removeClass('active');
-        else                    $li.addClass('active');
+        if ($ul.is(':visible')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
         $ul.slideToggle();
     });
 
@@ -15,7 +16,12 @@ $(function () {
     //highlight current / active link
     $('ul.main-menu li a').each(function () {
         if ($($(this))[0].href == String(window.location))
-            $(this).parent().addClass('active');
+            $(this).addClass('active');
     });
 
+    $('.btn-delete').on('click', function () {
+        let route = $(this).data('route');
+        $('#form-delete').attr('action', route);
+        $('#modal-delete').modal('show');
+    });
 });
