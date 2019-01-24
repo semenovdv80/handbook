@@ -27,7 +27,7 @@
 <div class="container-fluid">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">ITsGOOD</a>
+        <a class="navbar-brand" href="#">HandBOOK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,9 +82,9 @@
         </div>
     </nav>
 </header>
-<div class="container-fluid content">
+<div class="container-fluid">
     <div class="row">
-        <div class="main-content">
+        <div class="main-content container-fluid">
             <?php if (session()->has('result', 'success')) {
                 echo '<div class="alert alert-success text-center">Запись сохранена</div>';
             }?>

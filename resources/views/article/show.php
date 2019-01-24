@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-sm-10">
         <h2>Новая заметка</h2>
-        <div id="sample">
+        <div id="sample" style="width: 100%">
             <form method="post">
                 <div class="form-group">
                     <label for="section_id">Раздел</label>
@@ -24,7 +24,7 @@
                     <textarea id="content" name="content" style="width: 100%; height: 200px"><?= $article->content ?? '' ?></textarea>
                     </div>
                 </div>
-                    <div class="form-group">
+                <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Сохранить">
                 </div>
             </form>

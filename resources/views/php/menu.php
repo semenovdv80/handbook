@@ -1,5 +1,5 @@
 <div>
-    <ul class="nav nav-pills main-menu">
+    <ul class="nav flex-column nav-pills main-menu">
         <li class="nav-item">
             <a class="nav-link" href="/"><strong>На главную</strong></a>
         </li>

@@ -9,26 +9,15 @@ self::get('/article/edit/{id}', 'ArticleController@edit');
 self::post('/article/edit/{id}', 'ArticleController@edit');
 self::post('/article/delete/{id}', 'ArticleController@delete');
 
+#PHP
 self::get('/php', 'PhpController@index');
-self::get('/php/all', 'PhpController@index');
-self::post('/php/add', 'PhpController@add');
 
-self::get('/php/pear', 'PhpController@pear');
+#MySQL
+self::get('/mysql', 'MysqlController@index');
 
 self::get('/apache', 'ApacheController@install');
 self::get('/apache/config', 'ApacheController@config');
 self::get('/apache/errors', 'ApacheController@errors');
-
-self::get('/mysql', 'MysqlController@install');
-self::get('/mysql/backup', 'MysqlController@backup');
-self::get('/mysql/import', 'MysqlController@import');
-self::get('/mysql/config', 'MysqlController@config');
-self::get('/mysql/fulltext', 'MysqlController@fulltext');
-self::get('/mysql/logs', 'MysqlController@logs');
-self::get('/mysql/normalization', 'MysqlController@normalization');
-self::get('/mysql/errors', 'MysqlController@errors');
-self::get('/mysql/errors/mysqldsock', 'MysqlController@error_mysqldsock');
-self::get('/mysql/errors/worldwritable', 'MysqlController@error_worldwritable');
 
 #LARAVEL
 self::get('/laravel', 'LaravelController@install');

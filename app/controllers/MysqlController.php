@@ -3,9 +3,26 @@
 namespace App\controllers;
 
 use App\base\Controller;
+use App\models\Article;
+use Essential\Http\Request;
 
 class MysqlController extends Controller
 {
+    /**
+     * Index page
+     *
+     */
+    public function index(Request $request)
+    {
+        $articles = Article::list($request, Article::$sections['MySQL'])->get();
+        view('mysql.index', [
+            'page_title' => 'Установка MySQL 5.6 в Ubuntu 16.04',
+            'page_keywords' => 'mysql, sql, install, ubuntu, установка, settings, параметры',
+            'page_description' => 'mysql - установка и настройка',
+            'articles' => $articles
+        ]);
+    }
+
     public function install()
     {
         $aData['page_title'] = 'Установка MySQL 5.6 в Ubuntu 16.04';
