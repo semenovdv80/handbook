@@ -10,10 +10,13 @@ self::post('/article/edit/{id}', 'ArticleController@edit');
 self::post('/article/delete/{id}', 'ArticleController@delete');
 
 #PHP
-self::get('/php', 'PhpController@index');
+self::get('/php', 'ArticleController@index');
+
+#NGINX
+self::get('/nginx', 'ArticleController@index');
 
 #MySQL
-self::get('/mysql', 'MysqlController@index');
+self::get('/mysql', 'ArticleController@index');
 
 self::get('/apache', 'ApacheController@install');
 self::get('/apache/config', 'ApacheController@config');

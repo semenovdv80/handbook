@@ -46,8 +46,7 @@ ul.main-menu li >a.active {
 
 /*фон и шрифт при наведении*/
 ul.main-menu > li > a:hover {
-    background-color: #dadada;
-    color: darkblue;
+    text-decoration: none;
 }
 
 .main-menu > li > a {
@@ -56,6 +55,7 @@ ul.main-menu > li > a:hover {
 
 .main-menu > li {
     margin-top: 0 !important;
+    margin-bottom: 5px;
 }
 
 ul.main-menu li:not(.nav-header) {
