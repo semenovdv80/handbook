@@ -58,6 +58,7 @@ class ArticleController extends Controller
     public function edit($id)
     {
         $article = Article::find($id);
+        $articles = Article::where('section_id', $article->section_id)->get();
         if (!$article) {
             return redirect()->route('/');
         }
@@ -75,6 +76,7 @@ class ArticleController extends Controller
             'request' => $request,
             'sections' => Article::$sections,
             'article'=>$article,
+            'articles'=>$articles,
             'page_title' => $article->title,
             'page_keywords' => $article->title,
             'page_description' => $article->title,
